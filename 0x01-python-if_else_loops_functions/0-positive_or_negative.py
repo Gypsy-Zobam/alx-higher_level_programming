@@ -1,4 +1,9 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10, 10)
-print("Random number between -10 and 10 is % d" % (number))
+if number > 0:
+    print(number, is positive)
+elif number == 0:
+    print(number, is zero)
+else number < 0:
+    print(number, is negative)
