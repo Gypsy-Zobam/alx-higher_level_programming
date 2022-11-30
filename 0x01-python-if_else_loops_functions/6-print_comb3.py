@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-for x in range(3, 4):
-    for y in range(x + 1, 10):
-        print("{:d}{:d}". format(x, y), end=', ')
-print("{:d}{:d}". format(x + 1, y))
+for number in range(100):
+    if int(number / 10) != number % 10 and int(number / 10) < number % 10:
+        print("{}{}".format(int(number / 10), number % 10), end="")
+        if (number != 89):
+            print(", ", end="")
+print("")
