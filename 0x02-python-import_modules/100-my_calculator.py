@@ -1,17 +1,18 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import sys
     from calculator_1 import add, sub, mul, div
-    argv = sys.argv[1:]
-    argv_count = len(argv)
-    operators = ["+", "-", "*", "/"]
-    if argv_count is not 3:
+    from sys import argv, exit
+
+    if len(argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    elif sys.argv[2] not in operators:
+
+    op = argv[2]
+
+    if op not in "+-*/":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
-    else:
+
         a = int(sys.argv[1])
         b = int(sys.argv[3])
         if sys.argv[2] is "+":
