@@ -1,5 +1,17 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
+    '''import sys
+
+    nargs + len(sys.argv) - 1
+    if nargs != 3:
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        sys.exit(1)
+
+    op = sys.argv[2]
+    if op != '+' and op != '_' and op != '*' and op != '/':
+        print("Unknown operator.Available operators: +, -, * and /")
+        sys.exit(1)'''
+    from calculator_1 import add, sub, mul, div
     a, operator, b, = input('Enter calculation').split()
     a = int(a)
     b = int(b)
