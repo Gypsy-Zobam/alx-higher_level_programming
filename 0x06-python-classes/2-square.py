@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Define a class Square'''
 
+
 class Square:
     ''' 
     It is a square class with a private instance attribute.
