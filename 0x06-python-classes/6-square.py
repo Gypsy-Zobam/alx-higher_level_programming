@@ -9,7 +9,7 @@ class Square:
         """Initializes square
         Args:
             size (int): size of the square
-            position (int, int): position of arguments
+            position (int, int): position of argument
         """
 
         self.size = size
@@ -39,7 +39,7 @@ class Square:
 
     def area(self):
         """ Calculates the area of a square
-        Return:
+        Returns:
             area
         """
 
@@ -47,10 +47,7 @@ class Square:
 
     @property
     def position(self):
-        """Gets value of position
-        Returns:
-            position (int)
-        """
+        """Gets the position"""
 
         return self.__position
 
@@ -58,10 +55,10 @@ class Square:
     def position(self, value):
         """change the value of position
         Args:
-            value (int, int): new value of size
+            value (int, int): new position
         """
 
-        if ype(value) != tuple or len(value) != 2:
+        if type(value) != tuple or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         if type(value[0]) != int or type(value[1]) != int:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -70,7 +67,7 @@ class Square:
         self.__position = value
 
     def area(self):
-        return self.__size ** 2
+        a = self.__size ** 2
         return a
 
     def my_print(self):
@@ -83,9 +80,9 @@ class Square:
         else:
             for line in range(0, self.__position[1]):
                 print()
-        for i in range(0, self.__size):
-            for space in range(0, self.__position[0]):
+            for i in range(0, self.__size):
+                for space in range(0, self.__position[0]):
                 print(" ", end="")
-            for j in range(0, self.__size):
+                for j in range(0, self.__size):
                 print("#", end="")
             print()
