@@ -4,5 +4,4 @@
 
 class square:
     '''It is an empty class square'''
-
     pass
