@@ -5,6 +5,4 @@
 class Square:
     '''It is a square class with a private object attribute'''
     def __init__(self, size):
-        self.size = size
-
-        return self.__size
+        self.__size = size
