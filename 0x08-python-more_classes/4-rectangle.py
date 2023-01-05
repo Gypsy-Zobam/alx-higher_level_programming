@@ -58,6 +58,5 @@ class Rectangle:
                 rect += '\n'
         return rect
 
-    """ A string representation of the rectangle to be able to recreate a new instance."""
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
