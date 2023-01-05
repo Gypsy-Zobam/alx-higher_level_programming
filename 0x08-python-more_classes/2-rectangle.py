@@ -55,7 +55,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-    """Instance methods that return the area and perimeter of a rectangle"""
     def area(self):
         """Calculates the area of a rectangle
         Returns:
