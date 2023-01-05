@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Defining a Rectangle class"""
+    """Defining the Rectangle class"""
 
     def __init__(self, width=0, height=0):
         """Initialize square
@@ -56,7 +56,6 @@ class Rectangle:
         self.__height = value
 
     """Instance methods that return the area and perimeter of a rectangle"""
-
     def area(self):
         """Calculates the area of a rectangle
         Returns:
