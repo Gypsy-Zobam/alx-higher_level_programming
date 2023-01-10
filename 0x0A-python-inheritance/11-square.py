@@ -1,27 +1,32 @@
 #!/usr/bin/python3
-"""""""
+"""
+Square inherits from Rectangle which inherits from BaseGeometry
+"""
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Rectangle(BaseGeometry):
-    """Represents a rectangle.
-    Private instance attributes:
-        - width
-        - height
-    Inherits from BaseGeometry.
+class Square(Rectangle):
+    """Square data that inherits from Rectangle
+       init `size` twice because width and height are same in sq
+       uares
     """
 
-    def __init__(self, width, height):
-        """Initializes an instance.
-        Args:
-            - width: width of the rectangle
-            - heigth: height of the rectangle
+    def __init__(self, size):
+        super().integer_validator("size", size)
+        super().__init__(size, size)
+        self.__size = size
+
+    def area(self):
+        """Method to calculate area of the square
         """
 
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
-        self.__width = width
-        self.__height = height
+        return self.__size * self.__size
+
+    def __str__(self):
+        """Magic method to print square description
+        """
+
+        return "[Square] {}/{}".format(self.__size, self.__size)
