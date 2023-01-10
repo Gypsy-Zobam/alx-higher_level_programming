@@ -1,4 +1,4 @@
-#!/usrbinpython3
+#!/usr/bin/python3
 """ Only sub class of"""
 
 
