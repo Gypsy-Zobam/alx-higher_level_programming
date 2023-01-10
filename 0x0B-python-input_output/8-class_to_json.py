@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-"""Function that returns the dictionary description with simple d
-ata structure (list, dictionary, string, integer and boolean) for
-JSON serialization of an object
-"""
+"""Defines a Python class-to-JSON function."""
+
 
 def class_to_json(obj):
-    """Returns the dictionary description for JSON
-    """
+    """Return the dictionary represntation of a simple data structure."""
     return obj.__dict__
