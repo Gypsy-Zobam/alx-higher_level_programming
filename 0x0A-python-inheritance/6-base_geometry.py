@@ -1,11 +1,15 @@
 #!/usr/bin/python3
-"""Improve Geometry"""
+"""BaseGeometry.
+Creates a class.
+"""
 
 
 class BaseGeometry:
-    """Contains a function area()"""
+    """Class with public instance method."""
 
     def area(self):
-        """Function not implemented"""
+        """Raises an Exception with the message
+        'area() is not implemented'.
+        """
 
-        raise Exception("area() is not to beimplemented")
+        raise Exception('area() is not implemented')
