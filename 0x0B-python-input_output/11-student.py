@@ -37,5 +37,4 @@ class Student:
             s with.
         """
         for i, j in json.items():
-            setattr(self, k, v)
-
+            setattr(self, i, j)
