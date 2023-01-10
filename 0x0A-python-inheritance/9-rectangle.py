@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""9. Full rectangle. Rectangle inherits from BaseGeometry
+"""Rectangle inherits from BaseGeometry
 """
+
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Rectangle data inherits from BaseGeometry
+    """Represents a rectangle data inherits from BaseGeometry
     """
 
     def __init__(self, width, height):
@@ -19,10 +20,10 @@ class Rectangle(BaseGeometry):
         """Method that calculates area of rectangle
         """
 
-        return self.width * self.height
+        return self.__width * self.__height
 
     def __str__(self):
-        """Returns a formatted string."""
+        """Magic method to return rectangle description
+        """
 
-        return "[Rectangle] {:d}/{:d}".format(self.__width, self
-                .__height)
+        return str("[Rectangle] {}/{}".format(self.__width, self.__height))
