@@ -5,5 +5,4 @@
 
 SELECT score, name
 from second_table
-WHERE hbtn_0c_0 
 ORDER by score DESC;
